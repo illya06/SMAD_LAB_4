@@ -14,19 +14,18 @@ function xGeneral(data) {
     return res / data.length
 }
 
-function qGeneral(data) {
+function q(data) {
     let x = xGeneral(data)
     let res = 0
 
     for (let i = 0; i < 4; i++)
-        for (let j = 0; j < 8; j++) {
+        for (let j = 0; j < 8; j++)
             res += Math.pow(data[i][j]-x,2)
-        }
-
+        
     return res
 }
 
-function qGroup(data){
+function q1(data){
     let xG = xGeneral(data);
     let res =0;
 
