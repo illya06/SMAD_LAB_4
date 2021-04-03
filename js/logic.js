@@ -34,3 +34,14 @@ function q1(data){
     
     return res*8;
 }
+
+//in group dispersion
+function q2(data){
+    let res = 0
+
+    for (let i = 0; i < 4; i++)
+        for (let j = 0; j < 8; j++)
+            res += Math.pow(data[i][j]-x(data[i]),2)
+        
+    return res
+}
