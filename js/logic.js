@@ -14,6 +14,7 @@ function xGeneral(data) {
     return res / data.length
 }
 
+//general dispersion
 function q(data) {
     let x = xGeneral(data)
     let res = 0
@@ -25,6 +26,7 @@ function q(data) {
     return res
 }
 
+//group dispersion
 function q1(data){
     let xG = xGeneral(data);
     let res =0;
