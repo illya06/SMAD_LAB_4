@@ -1,5 +1,5 @@
 function x(numbers) {
-    let res = 0;
+    let res = 0
     for (let i = 0; i <= 7; i++)
         res += numbers[i]
 
@@ -7,7 +7,7 @@ function x(numbers) {
 }
 
 function xGeneral(data) {
-    let res = 0;
+    let res = 0
     for (let i = 0; i <= 3; i++)
         res += +x(data[i])
 
@@ -28,8 +28,8 @@ function q(data) {
 
 //group dispersion
 function q1(data){
-    let xG = xGeneral(data);
-    let res =0;
+    let xG = xGeneral(data)
+    let res =0
 
     for(let i=0;i<4;i++)
         res+=Math.pow(x(data[i])-xG, 2)
